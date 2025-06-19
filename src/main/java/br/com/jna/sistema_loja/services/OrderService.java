@@ -1,7 +1,6 @@
 package br.com.jna.sistema_loja.services;
 
 import br.com.jna.sistema_loja.entities.Order;
-import br.com.jna.sistema_loja.entities.User;
 import br.com.jna.sistema_loja.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

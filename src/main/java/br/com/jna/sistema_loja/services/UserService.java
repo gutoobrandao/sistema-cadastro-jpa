@@ -2,7 +2,6 @@ package br.com.jna.sistema_loja.services;
 
 import br.com.jna.sistema_loja.entities.User;
 import br.com.jna.sistema_loja.repositories.UserRepository;
-import jakarta.persistence.GeneratedValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
