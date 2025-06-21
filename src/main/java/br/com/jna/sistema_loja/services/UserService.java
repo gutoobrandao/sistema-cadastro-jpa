@@ -2,6 +2,7 @@ package br.com.jna.sistema_loja.services;
 
 import br.com.jna.sistema_loja.entities.User;
 import br.com.jna.sistema_loja.repositories.UserRepository;
+import br.com.jna.sistema_loja.services.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +20,7 @@ public class UserService {
 
     public User findId(Long id) {
         Optional<User> obj = repository.findById(id);
-        return obj.get();
+        return obj.orElseThrow(() -> new ResourceNotFoundException(id));
     }
 
     public User insert(User obj) {
